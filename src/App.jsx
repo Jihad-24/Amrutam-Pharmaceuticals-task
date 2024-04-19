@@ -2,6 +2,7 @@ import Banner from "./components/Banner/Banner";
 import Consultations from "./components/Consultations/Consultations";
 import Harmony from "./components/Harmony/Harmony";
 import Magic from "./components/Magic/Magic";
+import Approach from "./components/approach/Approach";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Magic/>
      <Consultations/>
      <Harmony/>
+     <Approach/>
     </div>
   );
 }
