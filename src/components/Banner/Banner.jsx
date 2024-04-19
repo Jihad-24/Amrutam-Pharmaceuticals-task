@@ -5,14 +5,14 @@ import shield from "../../assets/shield 1.png";
 import speechbubble from "../../assets/speech-bubble (2) 1.svg";
 const Banner = () => {
   return (
-    <div className="pt-12 bg-[#FFF7E2]">
-      <div className="min-h-[500px] max-h-[500px]">
+    <div className="pt-12 bg-[#FFF7E2] relative">
+      <div className="min-h-[500px] max-h-[500px] ">
         <img
           className="float-end min-h-[500px] max-h-[500px] w-[700px]"
           src={banner1}
           alt=""
         />
-        <div className="absolute flex items-center min-h-[500px] max-h-[500px] w-full left-0 top-12 bg-gradient-to-r from-[#121212] via-[#121212] to-[rgba(21, 21, 21, 0)] text-white">
+        <div className="absolute flex items-center min-h-[500px] max-h-[500px] w-full left-0 top-12 bg-gradient-to-r from-[#121212] via-[#121212] to-[rgba(21, 21, 21, 0)] text-white max-w-7xl">
           <div
             className="text-white space-y-5 pl-12  hidden md:block"
             data-aos="fade-left"
