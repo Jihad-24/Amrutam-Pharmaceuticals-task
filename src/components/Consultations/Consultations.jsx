@@ -47,7 +47,7 @@ const Consultations = () => {
             </p>
           </div>
           <div className=" md:col-span-3 md:h-60 rounded-2xl">
-            <img src={image2} className="" />
+            <img src={image2} className="md:h-60 w-full" />
           </div>
           <div className="md:col-span-3 md:h-60 bg-white rounded-2xl pt-8 md:pt-14 pb-8 md:pb-0 shadow  px-8 border-t-4  border-[#3A643B]">
             <h1 className="text-[#3A643B] text-xl text-left font-bold">
@@ -60,7 +60,7 @@ const Consultations = () => {
             </p>
           </div>
           <div className=" md:col-span-3 md:h-60 rounded-2xl">
-            <img src={image3} className="" />
+            <img src={image3} className="md:h-60 w-full" />
           </div>
         </div>
       </div>
