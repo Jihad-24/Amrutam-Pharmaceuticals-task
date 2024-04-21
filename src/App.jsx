@@ -3,6 +3,7 @@ import Consultations from "./components/Consultations/Consultations";
 import Customers from "./components/Customers/Customers";
 import Experts from "./components/Experts/Experts";
 import Harmony from "./components/Harmony/Harmony";
+import HomeApp from "./components/HomeApp/HomeApp";
 import Magic from "./components/Magic/Magic";
 import Approach from "./components/approach/Approach";
 
@@ -16,6 +17,7 @@ function App() {
      <Approach/>
      <Customers/>
      <Experts/>
+     <HomeApp/>
     </div>
   );
 }
