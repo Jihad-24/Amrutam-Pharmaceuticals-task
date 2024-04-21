@@ -80,7 +80,7 @@ const Customers = () => {
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={false}
         slidesPerView={3}
         spaceBetween={20}
         pagination={true}
@@ -99,30 +99,29 @@ const Customers = () => {
             slidesPerView: 1,
           },
         }}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 5000 }}
       >
         {posts?.map((item) => (
           <SwiperSlide key={item?._id}>
             <div
-              key={item?._id}
-              className="bg-white rounded-y-lg h-[300px] mb-10 md:mb-16"
+              className="bg-white rounded-xl h-[300px] mb-10 md:mb-16"
             >
-              <div className="bg-[#ECE7FF] rounded-t-lg font-bold py-3 px-2">
+              <div className="bg-[#ECE7FF] text-sm rounded-t-lg font-bold py-3 px-5">
                 {item.title}
               </div>
-              <div className="px-3">
+              <div className="px-3 space-y-3">
                 <div className="flex justify-between items-center py-4">
                   <div className="flex items-center gap-3">
-                    <div className="flex flex-wrap justify-between">
+                    <div className="flex flex-wrap justify-between  ">
                       <img
-                        className="size-[80px] bg-slate-500 object-cover rounded-lg hover:blur-[2px] duration-500"
+                        className="size-[50px] bg-slate-500 object-cover rounded-lg hover:blur-[2px] duration-500"
                         src={image}
                         alt="avatar navigate ui"
                       />{" "}
                     </div>
                     <div className="text-left">
-                      <h1>{item.name}</h1>
-                      <p>{item.location}</p>
+                      <h1 className="font-semibold text-sm">{item.name}</h1>
+                      <p className="text-sm text-[#555555]">{item.location}</p>
                     </div>
                   </div>
                   <p>{item.date}</p>
@@ -134,9 +133,9 @@ const Customers = () => {
                   <FaStar className="text-[#EEDE4D]" />
                   <FaStar className="text-[#EEDE4D]" />
                 </div>
-                <div className="">
-                  <h1 className="text-xl font-bold">{item.reviewTitle}</h1>
-                  <p>{item.reviewContent}</p>
+                <div className="text-left lg:pr-12">
+                  <h1 className="text-lg font-bold">{`"${item.reviewTitle}"`}</h1>
+                  <p className="text-[#555555] text-sm" >{item.reviewContent}</p>
                 </div>
               </div>
             </div>

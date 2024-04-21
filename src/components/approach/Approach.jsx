@@ -1,25 +1,14 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Autoplay, Pagination } from "swiper/modules";
+import "./slider.css"
 
 const Approach = () => {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+ 
   return (
     <div className="py-16 bg-white mx-1">
       <div className="flex flex-col items-center space-y-5 px-1">
@@ -33,12 +22,35 @@ const Approach = () => {
           current health conditions.
         </p>
       </div>
-      <div className="slider-container mt-10 ">
-        <Slider {...settings} className="">
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={false}
+        slidesPerView={4}
+        spaceBetween={20}
+        pagination={true}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
+        breakpoints={{
+          // when window width is >= 640px
+          1024: {
+            slidesPerView: 4,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          // when window width is <= 640px
+          0: {
+            slidesPerView: 1,
+          },
+        }}
+        autoplay={{ delay: 5000 }}
+      >
           {demo.map((item) => (
+            <SwiperSlide  key={item?.id}>
             <div
               key={item?.id}
-              className="border-t-[6px]  border-[#3A643B] border-x-2 border-x-white rounded-[28px] bg-[#FFF7E2] p-6  text-white md:p-8 text-2xl font-bold "
+              className="border-t-[6px]  border-[#3A643B]  rounded-[28px] bg-[#FFF7E2] p-6  text-white md:p-8 text-2xl font-bold "
             >
               <div className="flex flex-col items-center justify-center space-y-4">
                 <div className="relative mx-auto h-fit w-fit rounded-full bg-[#3a643bb7] py-5 px-8">
@@ -52,9 +64,9 @@ const Approach = () => {
                 </h6>
               </div>
             </div>
+            </SwiperSlide>
           ))}
-        </Slider>
-      </div>
+        </Swiper>
     </div>
   );
 };
