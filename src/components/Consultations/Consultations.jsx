@@ -6,7 +6,7 @@ const Consultations = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-[#FFF7E2]  to-[#FFFAEE] ">
       <div className="flex flex-col items-center space-y-5 mx-1">
-        <h1 className="text-[#3A643B] text-center font-bold text-xl md:text-3xl border-b-4  border-[#C3D0C4]">
+        <h1 className="text-[#3A643B] text-center font-bold text-xl md:text-3xl md:border-b-4  md:border-[#C3D0C4]">
           What sets Ayurvedic consultations apart?
         </h1>
       </div>
