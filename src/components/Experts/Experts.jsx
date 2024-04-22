@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
+import { useRef } from "react"; // Import useRef hook
 import { FaArrowLeft, FaArrowRight, FaLink, FaStar } from "react-icons/fa";
 import { Autoplay, Pagination } from "swiper/modules";
 import image from "../../assets/Ellipse 725.png";
 import "./Experts.css";
-import { useRef } from "react"; // Import useRef hook
 
 const Experts = () => {
   const swiperRef = useRef(null); // Create a ref for Swiper
@@ -32,19 +32,25 @@ const Experts = () => {
         </h1>
       </div>
       {/* arrow left */}
-      <div className="absolute hidden top-1/2 left-10 z-50 md:flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8 border border-[#A5A5A5] p-6" onClick={handlePrev}>
-        <button className="" >
+      <div
+        className="absolute hidden top-1/2 left-10 z-50 md:flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8 border border-[#A5A5A5] p-6"
+        onClick={handlePrev}
+      >
+        <button className="">
           <FaArrowLeft className="text-[#A5A5A5] text-2xl" />
         </button>
       </div>
       {/* arrow right */}
-      <div className="border border-[#A5A5A5] hidden absolute top-1/2 z-50 right-10  md:flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8 p-6"  onClick={handleNext}>
+      <div
+        className="border border-[#A5A5A5] hidden absolute top-1/2 z-50 right-10  md:flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8 p-6"
+        onClick={handleNext}
+      >
         <button className="">
           <FaArrowRight className="text-[#A5A5A5] text-2xl" />
         </button>
       </div>
-      <Swiper 
-      ref={swiperRef}
+      <Swiper
+        ref={swiperRef}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={false}
@@ -109,7 +115,7 @@ const Experts = () => {
         ))}
       </Swiper>
       <div className="hidden md:flex justify-center items-center text-center mt-8 rounded-full">
-        <button className="rounded-lg bg-sky-500 flex items-center justify-center px-8 py-3 text-xl bg-[#F1F5F2] text-[#3a643b] border border-[#3a643b] duration-300 gap-2 active:scale-95">
+        <button className="rounded-lg flex items-center justify-center px-8 py-3 text-xl bg-[#F1F5F2] text-[#3a643b] border border-[#3a643b] duration-300 gap-2 active:scale-95">
           Find more experts
           <svg
             className="w-4 h-4 icon"

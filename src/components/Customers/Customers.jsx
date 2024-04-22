@@ -114,7 +114,7 @@ const Customers = () => {
                   <div className="flex items-center gap-3">
                     <div className="flex flex-wrap justify-between  ">
                       <img
-                        className="size-[50px] bg-slate-500 object-cover rounded-lg hover:blur-[2px] duration-500"
+                        className="size-[50px]  object-cover rounded-lg hover:blur-[2px] duration-500"
                         src={image}
                         alt="avatar navigate ui"
                       />{" "}
