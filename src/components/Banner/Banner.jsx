@@ -24,10 +24,10 @@ const Banner = () => {
             <h2 className="lg:text-4xl md:text-4xl font-bold pr-20">
               Step into Holistic Healing with{" "}
               <span className="text-[#FFF7E2] border-b-2">Ayurveda</span>{" "}
-              <p className="mt-2">
+              <span className="mt-2">
                 {" "}
                 Book Consultation with certified Experts.{" "}
-              </p>
+              </span>
             </h2>
             <p className="text-[#C9C9C9]">
               Dive into the world of ayurveda and Experience Personalized Health
@@ -80,8 +80,8 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-6 px-6 md:px-20">
-        <div className="flex items-center justify-center gap-2">
+      <div className="flex flex-col md:flex-row md:items-center justify-center gap-10 py-6 px-6 md:px-20 ">
+        <div className="flex items-center  gap-2">
           <div className="bg-white rounded-full  p-3 border border-[#3A643B]">
             {" "}
             <img className="w-10" src={speechbubble} alt="" />
@@ -91,7 +91,7 @@ const Banner = () => {
             convenient online & In-clinic consultations
           </h3>
         </div>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center  gap-2">
           <div className="bg-white rounded-full border border-[#3A643B] p-3">
             {" "}
             <img className="w-10" src={shield} alt="" />
@@ -99,7 +99,7 @@ const Banner = () => {
 
           <h3 className="text-[#3A643B]">Safe and effective treatment</h3>
         </div>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center  gap-2">
           <div className="bg-white rounded-full border border-[#3A643B] p-3">
             {" "}
             <img className="w-10" src={doctor} alt="" />
@@ -109,7 +109,7 @@ const Banner = () => {
             Experienced Ayurvedic Practitioners
           </h3>
         </div>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center  gap-2">
           <div className="bg-white rounded-full border border-[#3A643B] p-3">
             {" "}
             <img className="w-10" src={prescription} alt="" />
