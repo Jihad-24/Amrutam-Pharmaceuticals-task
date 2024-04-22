@@ -23,7 +23,7 @@ const Banner = () => {
             </p>
             <h2 className="lg:text-4xl md:text-4xl font-bold pr-20">
               Step into Holistic Healing with{" "}
-              <span className="text-[#FFF7E2] border-b-2">Ayurveda</span>{" "}
+              <span className="text-[#FFF7E2] border-b-2">Ayurveda</span> <br />
               <p className="mt-2">
                 {" "}
                 Book Consultation with certified Experts.{" "}
